@@ -1,12 +1,7 @@
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  // Global page headers
   head: {
     title: 'folio',
-    target: 'static',
-    ssr: false,
-    generate: {
-      fallback: '404.html' // Fallback for 404 errors
-    },
     htmlAttrs: {
       lang: 'en'
     },
@@ -21,26 +16,28 @@ export default {
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  // Global CSS
+  css: [],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  // Plugins to run before rendering page
+  plugins: [],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  // Auto import components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
+  // Modules for dev and build (recommended)
+  buildModules: [],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
+  // Modules
   modules: [
+    '@nuxt/image'  // Add the Nuxt Image module here
   ],
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  // Image module configuration
+  image: {
+    provider: 'vercel',
+  },
+
+  // Build Configuration
+  build: {}
 }
