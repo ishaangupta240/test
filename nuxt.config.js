@@ -2,6 +2,11 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'folio',
+    target: 'static',
+    ssr: false,
+    generate: {
+      fallback: '404.html' // Fallback for 404 errors
+    },
     htmlAttrs: {
       lang: 'en'
     },
